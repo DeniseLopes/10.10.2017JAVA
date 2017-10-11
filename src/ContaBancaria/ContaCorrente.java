@@ -1,25 +1,11 @@
 
 package ContaBancaria;
 
-public class Conta {
-    //Atributo
-    protected double saldo;
+public class ContaCorrente extends Conta {
     
     
-   //Metodo contrutor get
-    public double getSaldo() {
-        return saldo;
-    }
-    
-    //Métodos
-    public void deposita(){
-    
-    }
-    
-    public void saca(){
-    
-    }
-    
+    //Metodo
+    @Override
     public void atualiza(double p){
     double porcentagem;
         System.out.println("Saldo Atual:"+ this.saldo);
@@ -27,4 +13,9 @@ public class Conta {
     this.saldo+=porcentagem;
         System.out.println("Saldo Atualizado:" + this.saldo);
     }
+    
+    
+    
+    
 }
+
